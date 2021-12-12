@@ -106,6 +106,14 @@ for (i = 0; i < closebtns.length; i++) {
 	<div class="w3-container w3-card w3-white w3-margin-bottom">
         <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-wrench fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Projects</h2>
         <div class="w3-container">
+		  <h5 class="w3-opacity"><b>NIFTY-50 Stock Price Prediction</b> [<a href="https://niftystockpricepredictor.azurewebsites.net" target="_blank">website</a>]</h5>
+          <p>
+            This is an end to end machine learning project to predict the future stock price (30-days) of Nifty-50 stocks from the data set available on kaggle (up to 30-Apr-2021). To predict the stock prices for 30 days from 30-Apr-2021, the stock price for the previous 1000 days was fed into a deep learning neural net consisting of LSTM layers, as sets of 100 days (set 1: day 1 to day 100 stock price to predict the stock price for day 101, set 2: day 2 to day 101 stock price to predict the stock price for day 102, etc). The same neural net architecture was used for all stocks which meant  that for some stocks the model performed very well whereas for some stocks, the model performed poorly.
+		  </p>
+		  <p>A website was deployed using Flask/MS Azure to display the results obtained from the models. The Google charts library was used to display the charts in an interactive way.
+		  </p>
+          <hr />
+			
           <h5 class="w3-opacity"><b>Flight Fare Price Prediction</b> [<a href="https://emtflightpriceprediction.herokuapp.com" target="_blank">website</a>]</h5>
           <p>
             This is an to end implementation of flight fare price prediction machine learning project. Using the EaseMyTrip website data set on kaggle, I trained a Random Forest Regressor to predict the flight fare prices (in Indian Rupees) between source and destination cities based on a rich array of feature variables such as date and time of arrival and departure, date of search, layovers and the corresponding flight carriers. A fair bit of data preparation was needed due to the variety in the data types of the feature variables. The model was deployed using python Flask module on the Heroku platform.
